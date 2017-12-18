@@ -1,7 +1,8 @@
 import EN from './en';
 import IT from './it';
+import RU from './ru';
 
-const DEFAULT_LOCALE = 'en';
+const DEFAULT_LOCALE = 'ru';
 
 export default class Translator {
   constructor() {
@@ -10,6 +11,7 @@ export default class Translator {
 
     this.registerTranslation('en', EN);
     this.registerTranslation('it', IT);
+    this.registerTranslation('ru', RU);
 
     let locale = null;
     let languages = Translator.getBrowserLanguages();
