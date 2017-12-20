@@ -98,9 +98,9 @@ module.exports = function (env) {
     }));
   }
 
-  if (!isProduction) {
-    config.plugins.push(new OpenBrowserPlugin({url: `http://localhost:${port}`}))
-  }
+  // if (!isProduction) {
+  //   config.plugins.push(new OpenBrowserPlugin({url: `http://localhost:${port}`}))
+  // }
 
   return config;
 };
