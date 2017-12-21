@@ -34,6 +34,7 @@ module.exports = function (env) {
     devServer: {
       port: port,
       contentBase: path.join(__dirname, './dist'),
+      disableHostCheck: true
     },
     resolve: {
       extensions: ['.js', '.jsx'],
